@@ -1,110 +1,144 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Mário da silva kazola - Site Pessoal</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mário da Silva Kazola - Vlog Oficial</title>
   <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
     body {
-      font-family: Arial, sans-serif;
-      margin: 0; padding: 0;
-      background-color: #f4f4f9;
-      color: #333;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f2f2f2;
+      color: #222;
+      line-height: 1.6;
     }
     header {
-      background-color: #005f73;
+      background: linear-gradient(to right, #b30000, #660000);
       color: white;
-      padding: 20px 0;
+      padding: 50px 20px;
       text-align: center;
     }
-    nav {
+    header h1 {
+      font-size: 2.8rem;
+    }
+    header p {
+      font-size: 1.2rem;
       margin-top: 10px;
     }
+    nav {
+      background-color: #800000;
+      padding: 15px;
+      text-align: center;
+    }
     nav a {
-      color: #fff;
+      color: white;
       margin: 0 15px;
       text-decoration: none;
       font-weight: bold;
-    }
-    nav a:hover {
-      text-decoration: underline;
-    }
-    main {
-      max-width: 900px;
-      margin: 30px auto;
-      padding: 0 20px;
+      font-size: 1rem;
     }
     section {
-      margin-bottom: 40px;
+      max-width: 1100px;
+      margin: auto;
+      padding: 40px 20px;
+      background: white;
+      margin-top: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 8px rgba(0,0,0,0.1);
     }
     h2 {
-      border-bottom: 2px solid #005f73;
-      padding-bottom: 10px;
-      margin-bottom: 15px;
+      color: #b30000;
+      margin-bottom: 20px;
+    }
+    .vlog img, .vlog iframe {
+      width: 100%;
+      max-width: 500px;
+      border-radius: 8px;
+      margin: 10px 0;
+    }
+    ul {
+      list-style: disc;
+      margin-left: 20px;
     }
     footer {
-      background-color: #005f73;
+      background-color: #b30000;
       color: white;
       text-align: center;
-      padding: 15px 0;
-      position: fixed;
-      bottom: 0;
-      width: 100%;
+      padding: 20px;
+      margin-top: 40px;
     }
-    a.contact-link {
-      color: #005f73;
-      font-weight: bold;
+    .redes a {
+      color: white;
       text-decoration: none;
+      margin: 0 10px;
     }
-    a.contact-link:hover {
-      text-decoration: underline;
+    @media (max-width: 600px) {
+      header h1 { font-size: 2rem; }
+      nav a { display: block; margin: 10px 0; }
     }
   </style>
 </head>
 <body>
+
   <header>
-    <h1>Seu Nome</h1>
-    <nav>
-      <a href="#sobre">Sobre</a>
-      <a href="#experiencias">Experiências</a>
-      <a href="#projetos">Projetos</a>
-      <a href="#contato">Contato</a>
-    </nav>
+    <h1>Mário da Silva Kazola</h1>
+    <p>Vlog Oficial | medio-informãtico | Criador de Conteúdo digitais</p>
   </header>
 
-  <main>
-    <section id="sobre">
-      <h2>Sobre</h2>
-      <p>Olá! Sou [mário da silva kazola], [sou estudante médio de informática de gestão]. Tenho paixão por [tecnologia e cinema]. Busco sempre aprender e crescer profissionalmente.</p>
-    </section>
+  <nav>
+    <a href="#sobre">Sobre Mim</a>
+    <a href="#vlog">Vlog</a>
+    <a href="#projetos">Projetos</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
 
-    <section id="experiencias">
-      <h2>Experiências</h2>
-      <ul>
-        <li><strong>Ingles</strong> – elementer (2022 - 2023)</li>
-        <li><strong>editor de vídeos</strong> – experiente (2025 - até agora)</li>
-        <li><strong>ator</strong></li>
-      </ul>
-    </section>
+  <section id="sobre">
+    <h2>Sobre Mim</h2>
+    <p>Sou Mário da Silva Kazola, um jovem medio-informático e criador de conteúdo digitais  angolano. Uso minha voz e minhas ideias para inspirar outros através de vídeos, projetos sociais e culturais, e o meu próprio espaço gastronômico: o Snack Bar Kazola. Este site é o meu espaço pessoal para partilhar a minha jornada, projetos e visão.</p>
+  </section>
 
-    <section id="projetos">
-      <h2>Projetos</h2>
-      <ul>
-        <li><strong>Projeto 1:</strong> brevemente.</li>
-        <li><strong>Projeto 2:</strong> brevemente.</li>
-      </ul>
-    </section>
+  <section id="vlog" class="vlog">
+    <h2>Vlog / Galeria</h2>
+    <p>Alguns dos meus conteúdos, vídeos e fotos pessoais:</p>
+    <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Video Vlog Exemplo" frameborder="0" allowfullscreen></iframe>
+    <img src="https://via.placeholder.com/500x300?text=Minha+Imagem+1" alt="Imagem 1">
+    <img src="https://via.placeholder.com/500x300?text=Minha+Imagem+2" alt="Imagem 2">
+  </section>
 
-    <section id="contato">
-      <h2>Contato</h2>
-      <p>Email: <a href="mailto:magabelo45@gmail.com" class="contact-link">magabelo45@gmail.com</a></p>
-      <p>Instagram: <a href="https://www.instagram.com/mariodasilva_official" target="_blank" class="contact-link">@mariodasilva_official</a></p>
-      <p>LinkedIn: <a href="https://www.linkedin.com/in/seuusuario" target="_blank" class="contact-link">Seu Perfil</a></p>
-    </section>
-  </main>
+  <section id="projetos">
+    <h2>Projetos</h2>
+    <ul>
+      <li>Snack Bar Kazola - restaurante local</li>
+      <li>site podschool"</li>
+      <li>Conteúdo educativo e motivacional nas redes</li>
+      <li>Futuro podcast / canal de entrevistas</li>
+    </ul>
+  </section>
+
+  <section id="contacto">
+    <h2>Contacto</h2>
+    <p>📞 WhatsApp: +244 956527293</p>
+    <p>📧 Email: magabelo45@email.com</p>
+    <div class="redes">
+      <p>🌐 Redes Sociais:</p>
+      <a href="https://instagram.com/mariokazola" target="_blank">Instagram</a> |
+      <a href="https://youtube.com/" target="_blank">YouTube</a> |
+      <a href="https://facebook.com/" target="_blank">Facebook</a>
+    </div>
+  </section>
 
   <footer>
-    <p>© 2025 mariodasilvakazola- Todos os direitos reservados.</p>
+    <p>&copy; 2025 Mário da Silva Kazola. Todos os direitos reservados.</p>
   </footer>
+
 </body>
 </html>
+
+  
+      
+
+    
